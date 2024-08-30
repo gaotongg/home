@@ -17,11 +17,22 @@
             background: #333;
             color: #fff;
             padding: 1rem 0;
-            text-align: center;
+            text-align: left; /* Align content to the left */
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Center items vertically */
+            justify-content: space-between; /* Space between text and image */
         }
         header h1 {
             margin: 0;
             font-size: 2.5rem;
+        }
+        header .info {
+            margin-left: 20px;
+        }
+        header img {
+            max-width: 150px; /* Adjust the size of the image */
+            border-radius: 50%; /* Make the image circular */
+            margin-right: 20px; /* Add space between image and edge */
         }
         nav {
             margin: 1rem 0;
@@ -42,11 +53,6 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        img {
-            max-width: 200px; /* Resize the image to fit */
-            border-radius: 50%; /* Make the image circular */
-            margin-top: 20px;
-        }
         footer {
             text-align: center;
             padding: 1rem 0;
@@ -59,11 +65,12 @@
 <body>
 
 <header>
-    <h1>Tong Gao</h1>
-    <p>Adjunct Assistant Professor</p>
-    <p>Physics Department, Michigan Technological University</p>
-    <!-- Add the image here -->
-    <img src="profile.jpg" alt="Tong Gao">
+    <div class="info">
+        <h1>Tong Gao</h1>
+        <p>Adjunct Assistant Professor</p>
+        <p>Physics Department, Michigan Technological University</p>
+    </div>
+    <img src="profile.jpg" alt="Photo of Tong Gao">
 </header>
 
 <nav>
